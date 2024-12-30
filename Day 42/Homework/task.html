@@ -1,0 +1,53 @@
+<!--სათაური და ნავიგაციის მენიუ:
+შექმენი header, რომლის შიგნითაც იქნება ვებგვერდის სათაური
+(მაგალითად: "ვებგვერდის სათაური") და ნავიგაციის მენიუ.
+ნავიგაციის მენიუს მიანიჭე position: fixed; და დაადე გვერდის თავზე
+(პატარა გამჭვირვალე ფონი დააახლოვებს გვერდს პროფესიონალიზმს)-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სათაური</title>
+    <style>
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgb(190, 189, 74);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            display: inline-block;
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            display: inline-block;
+            margin-left: 30px;
+        }
+        nav a {
+            color: rgb(87, 87, 87);
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        body {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>სათაური</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+</body>
+</html>

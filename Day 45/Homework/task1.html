@@ -1,0 +1,55 @@
+<!--შექმენი HTML ფაილი, რომელიც შეიცავს რამდენიმე ბოქსს (div).
+გამოიყენე CSS,
+რომ:
+ბოქსის ფონი შეიცვალოს (background-color) და მიიღოს რბილი ჩრდილი (box-shadow),
+როდესაც მაუსი შეეხება ელემენტს.
+ბოქსის ზომა გაიზარდოს (scale) 1.1-ჯერ, როცა მაუსი შეეხება ელემენტს.-->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Hover Effect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000000;
+        }
+
+        .box-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #136100;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgb(110, 3, 114);
+            transition: all 0.3s ease;
+        }
+
+        .box:hover {
+            background-color: #00e1ff;
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box-container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
