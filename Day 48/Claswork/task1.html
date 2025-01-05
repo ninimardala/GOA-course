@@ -1,0 +1,47 @@
+<!--html - ში შემოიტანეთ 3 ელემენტი,
+თითო ელემენტს მიანიჭეთ სხვადასხვა სტილი root - ის დახმარებით,
+უნდა იყვეს შემდეგი თვისებები გამოყენებული:
+color,
+background-color,
+font-size,
+letter-spacing,
+display,
+flex,
+padding,
+margin,
+position,
+transform,
+transition-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Elements</title>
+    <style>
+        :root {
+            --color-1: #3498db; --bg-1: #ecf0f1; --font-size-1: 20px;
+            --color-2: #e74c3c; --bg-2: #f2f3f4; --font-size-2: 18px;
+            --color-3: #2ecc71; --bg-3: #dff9f2; --font-size-3: 22px;
+        }
+
+        .element-1, .element-2, .element-3 {
+            padding: 10px; margin: 15px; transition: 0.3s;
+        }
+
+        .element-1 { color: var(--color-1); background: var(--bg-1); font-size: var(--font-size-1); }
+        .element-2 { color: var(--color-2); background: var(--bg-2); font-size: var(--font-size-2); }
+        .element-3 { color: var(--color-3); background: var(--bg-3); font-size: var(--font-size-3); }
+
+        .element-1:hover { transform: scale(1.2); }
+        .element-2:hover { transform: rotate(10deg); }
+        .element-3:hover { transform: translateX(20px); }
+    </style>
+</head>
+<body>
+    <div class="element-1">Element 1</div>
+    <div class="element-2">Element 2</div>
+    <div class="element-3">Element 3</div>
+</body>
+</html>

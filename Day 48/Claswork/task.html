@@ -1,0 +1,38 @@
+<!--მოძებნეთ 3 css თვისება,
+რომელიც არის მოშლილი css - ის ახალი ვერსიიდან,
+გამოიყენეთ prefix - ბი და მოძებნილი 3 თვისება აამუშავეთ.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Example</title>
+  <style>
+    button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    div {
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    .container {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button>Click me!</button>
+    <div>Hover over me to see transition effect</div>
+  </div>
+
+</body>
+</html>
