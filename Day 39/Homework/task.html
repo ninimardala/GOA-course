@@ -1,72 +1,54 @@
+<!--1) სათაური და ნავიგაციის მენიუ:
+შექმენი header, რომლის შიგნითაც იქნება ვებგვერდის სათაური (მაგალითად: "ვებგვერდის სათაური") და ნავიგაციის მენიუ.
+ნავიგაციის მენიუს მიანიჭე position: fixed; და დაადე გვერდის თავზე (პატარა გამჭვირვალე ფონი დააახლოვებს გვერდს პროფესიონალიზმს).
+-->
+
 <!DOCTYPE html>
 <html lang="ka">
 <head>
+    <style>
+
+        body {
+          background-image: url("fone.jpg");
+        }
+        
+        h1 {
+          color: rgb(169, 13, 241);
+          text-align: center;
+        }
+        
+        p {
+          font-family: verdana;
+          font-size: 20px;
+        }
+        
+        </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <style>
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(to right, #ae00ff, #0026ff);
-            font-family: Arial, sans-serif;
-        }
-
-        .login-container {
-            background-color: #c300ff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgb(255, 255, 255);
-            text-align: center;
-            width: 300px;
-        }
-
-        .login-container h2 {
-            color: #000000;
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-            box-sizing: border-box;
-            font-size: 16px;
-        }
-
-        .login-container button {
-            width: 100%;
-            padding: 10px;
-            background-color: #c3fbff;
-            color: #000000;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .login-container button:hover {
-            background-color: #00ccff;
-        }
-    </style>
+    <title>The title of the website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="login-container">
-        <h2>login to your acces</h2>
-        <form>
-            <input type="text" placeholder="username" required>
-            <input type="password" placeholder="password" required>
-            <button type="submit">login</button>
-        </form>
+<header>
+    <div class="title">
+        <h1>HELLO</h1>
     </div>
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">about us</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="home">
+        <h2>main section</h2>
+        <p>This is the main content</p>
+    </section>
+</main>
 
 </body>
 </html>
